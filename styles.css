@@ -1,0 +1,70 @@
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Change font to a modern, playful font */
+    text-align: center;
+    background-image: linear-gradient(to bottom, #ff9ff3, #feca57); /* Vibrant gradient background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+button {
+    background-color: #ff6b6b; /* Vibrant button color */
+    color: white;
+    padding: 15px 30px;
+    margin: 15px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ee5253; /* Darker shade on hover for a playful effect */
+}
+
+/* Hidden theme options (can be added later) */
+.theme-options {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+.theme-options label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.theme-options input[type="radio"] {
+    display: none;
+}
+
+.theme-options label:hover {
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+button {
+    animation: pulse 2s infinite; /* Add a subtle pulsating animation to buttons */
+}
